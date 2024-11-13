@@ -1,0 +1,27 @@
+/* Estilos para o cabeçalho */
+header {
+    padding: 3rem;
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  /* Estilo do carrossel */
+  .carousel-inner .carousel-item :active {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: 300px; /* Define uma altura fixa para as imagens */
+    object-fit: contain; /* Ajusta a imagem para caber dentro do espaço sem distorção */
+  }
+  
+  /* Exemplo de espaçamento para a divisão */
+  .b-example-divider {
+    height: 1rem;
+    background-color: #f7f7f7;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ajuste de espaçamento para centralizar os itens da navegação */
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
