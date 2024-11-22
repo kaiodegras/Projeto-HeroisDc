@@ -1,35 +1,38 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DC COMICS🎬</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link href="styles.css" rel="stylesheet">
-
+  <link href="styles.css" rel="stylesheet"> <!-- Linkando o arquivo CSS -->
 </head>
 
 <body>
-  <main>
-    <div class="b-example-divider"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/DC_Comics_logo.png/768px-DC_Comics_logo.png"
+          alt="Logo DC Comics" width="40" height="40">
+      </a>
+      <!-- Título dentro da navbar -->
+      <h1 class="navbar-text mx-auto text-white">Melhores filmes da DC</h1> <!-- Título centralizado -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  </nav>
 
-    <header class="p-3 text-bg-dark">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/DC_Comics_logo.png/768px-DC_Comics_logo.png" class="card-img-top" alt="" width="40" height="40">
-          </a>
-        </div>
-      </div>
-    </header>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
     <div class="container py-5">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
-            <img src="imgs/sp.png" class="card-img-top" alt="..." width="500" height="300">
+            <img src="imgs/BT.jpg" class="card-img-top" alt="..." width="90%" height="100%">
             <div class="card-body">
               <h5 class="card-title">Card 1</h5>
               <p class="card-text">Descrição do conteúdo do primeiro card.</p>
@@ -38,7 +41,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="imgs/hr.png" class="card-img-top" alt="..." width="90%" height="100%">
+            <img src="imgs/SP.jpg" class="card-img-top" alt="..." width="90%" height="100%">
             <div class="card-body">
               <h5 class="card-title">Card 2</h5>
               <p class="card-text">Descrição do conteúdo do segundo card.</p>
@@ -47,7 +50,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="imgs/hr2.png" class="card-img-top" alt="..." width="500" height="300">
+            <img src="imgs/w.jpg" class="card-img-top" alt="..." width="90%" height="100%">
             <div class="card-body">
               <h5 class="card-title">Card 3</h5>
               <p class="card-text">Descrição do conteúdo do terceiro card.</p>

@@ -1,38 +1,57 @@
-
-header {
-  padding: 3rem;
-  background-color: #343a40;
-  color: #fff;
+/* Cor de fundo para toda a página */
+body {
+  background-color: #2d82d2;  /* Cor clara para o fundo */
 }
 
+/* Estilos para o cabeçalho */
+header {
+  padding: 3rem;
+  background-color: #343a40; /* Cor escura para o cabeçalho */
+  color: #246c98;
+}
 
+/* Cor de fundo para a área principal que envolve os cards */
+.container {
+  background-color: #e9ecef;  /* Cor de fundo clara */
+  padding: 20px;
+  border-radius: 8px;  /* Para bordas arredondadas */
+}
+
+/* Estilo do carrossel */
+.carousel-inner .carousel-item:active {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+  height: 300px; /* Define uma altura fixa para as imagens */
+  object-fit: contain; /* Ajusta a imagem para caber dentro do espaço sem distorção */
+}
+
+/* Exemplo de espaçamento para a divisão */
 .b-example-divider {
   height: 1rem;
   background-color: #f7f7f7;
   margin-bottom: 1rem;
 }
 
-
+/* Ajuste de espaçamento para centralizar os itens da navegação */
 .navbar-nav {
   display: flex;
   justify-content: center;
 }
 
-
-
+/* Animação de aumento e sombra no hover */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
-  animation: fadeInUp 1s forwards; 
+  animation: fadeInUp 1s forwards; /* Animação de entrada */
+  background-color: #ffffff;  /* Cor de fundo branca para os cards */
 }
 
-
+/* Efeito de hover: eleva o card e adiciona uma sombra */
 .card:hover {
-  transform: translateY(-50px); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra suave ao passar o mouse */
 }
 
-
+/* Animação para o fade-in dos cards */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -44,7 +63,7 @@ header {
   }
 }
 
-
+/* Adiciona uma leve sombra ao redor do card */
 .card-body {
   text-align: center;
 }
