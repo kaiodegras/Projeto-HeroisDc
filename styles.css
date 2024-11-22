@@ -37,33 +37,50 @@ header {
   justify-content: center;
 }
 
-/* Animação de aumento e sombra no hover */
+/* Arredondando as bordas dos cards */
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  animation: fadeInUp 1s forwards; /* Animação de entrada */
-  background-color: #ffffff;  /* Cor de fundo branca para os cards */
+  border-radius: 15px; /* Bordas arredondadas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Suavizando a transição */
+  overflow: hidden; /* Garante que a imagem e conteúdo não ultrapassem os limites arredondados */
 }
 
-/* Efeito de hover: eleva o card e adiciona uma sombra */
+/* Efeito de hover: quando o mouse passa sobre o card */
 .card:hover {
-  transform: translateY(-10px); /* Eleva o card ao passar o mouse */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra suave ao passar o mouse */
+  transform: translateY(-10px); /* Eleva o card */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+  background-color: #f8f9fa; /* Altera o fundo para uma cor mais clara */
 }
 
-/* Animação para o fade-in dos cards */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Efeito de transição nas imagens dos cards */
+.card-img-top {
+  transition: transform 0.3s ease; /* Suavizando o efeito de aumento na imagem */
 }
 
-/* Adiciona uma leve sombra ao redor do card */
+/* Efeito na imagem: aumenta ligeiramente ao passar o mouse */
+.card:hover .card-img-top {
+  transform: scale(1.05); /* Aumenta a imagem para 105% do seu tamanho */
+}
+
+/* Centraliza o texto dentro do card */
 .card-body {
   text-align: center;
+}
+
+/* Efeito no título do card */
+.card-title {
+  transition: color 0.3s ease, transform 0.3s ease; /* Suaviza as mudanças no título */
+}
+
+.card:hover .card-title {
+  color: #007bff; /* Muda a cor do título para azul */
+  transform: scale(1.1); /* Aumenta o título ligeiramente */
+}
+
+/* Efeito no texto do card */
+.card-text {
+  transition: color 0.3s ease; /* Suaviza a transição da cor do texto */
+}
+
+.card:hover .card-text {
+  color: #555; /* Muda a cor do texto para um tom mais escuro */
 }
